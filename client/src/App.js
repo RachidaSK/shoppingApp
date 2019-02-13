@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Cart from './containers/cart';
 import ProductList from './containers/productList';
 import PropTypes from 'prop-types';
 import { Container, Row, Col } from 'reactstrap';
+import Header from './components/Header/header'
 
 
 const App = () => {
   return (
-    <Container>
-      <Row>
-        <Col md="12">
-          <h1 className="text-center">Bamazon</h1>
-        </Col>
-      </Row>
+    <div>
+      <Header />
+      <Container>
       <Row>
         <Col md="8">
           <ProductList /> 
@@ -23,6 +21,9 @@ const App = () => {
 
       </Row>
     </Container>
+
+    </div>
+    
   )
 }
 

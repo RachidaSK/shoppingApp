@@ -6,7 +6,7 @@ import { Jumbotron, Alert } from 'reactstrap';
 const Cart = ({items, total, removeFromCart}) => {
     return (
         <div>
-            <h2>Shopping Cart</h2>
+            <h2 className="mt-2">Shopping Cart</h2>
             <div>
                 <Jumbotron>
                    {items.length > 0 

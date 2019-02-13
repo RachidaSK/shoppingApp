@@ -7,7 +7,7 @@ import './productlist.css';
 const ProductList = ({products}) => {
     return (
         <div>
-           <h2 className="ml-4">Products</h2>
+           <h2 className="ml-4 mt-2">Products</h2>
             <div className="productList-item row">
               {products.map (product => (
                   <Product {...product}/>
